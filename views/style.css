@@ -1,15 +1,15 @@
+
 body {
     margin: 0;
     background-size: cover;
-/*    display: flex;*/
+    /* display: flex; */
     height: 100vh;
-/*    justify-content: center;*/
-/*    min-width: 250px;*/
+    /* justify-content: center; */
+    /* min-width: 250px; */
     font-family: sans-serif;
-    background-attachment: fixed;
-    background: #51847f;
+    /* background-attachment: fixed; */
+    background: #ffffff;
 }
-
 /* padding and margins */
 * {
   box-sizing: border-box;
@@ -31,19 +31,17 @@ ul {
 
 /* styling of items */
 ul li {
-  cursor: pointer;
-  position: relative;
-  padding: 12px 8px 12px 40px;
-  list-style-type: none;
-  background: #eee;
-  font-size: 18px;
-  transition: 0.2s;
-  
-  /* unselectable items */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 12px 12px 12px;
+    list-style-type: none;
+    background: #fff;
+    /* font-size: 18px; */
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* different colours 'odd' */
@@ -80,57 +78,66 @@ ul li:hover {
 */
 /* button styling */
 a, .close {
-  position: absolute;
-  right: 0;
-  font-size: 27px;
-  top: 0;
-  padding: 12px 16px 12px 16px;
+    position: absolute;
+    right: 0;
+    /* font-size: 27px; */
+    /* top: 0; */
+    /* padding: 12px 16px 12px 16px; */
 }
 
 a,.close:hover {
-  background-color: #fb7369fc;
-  color: white;
-  text-decoration: none;
+    /* background-color: #fb7369fc; */
+    color: black;
+    text-decoration: none;
 }
 
 /* header styling */
 .header {
-  font-size: 4rem;
+  /*font-size: 4rem;*/
   padding: 14px;
-  color: white;
-  text-align: center;
+    color: #1b1b1b;
+/*  text-align: center;*/
 }
 
 
 /* Style the input */
 input {
-  margin-bottom: 15px;
-  border: none;
-  width: 100%;
-  padding: 15px;
-  float: right;
-  font-size: 12px;
-  font-style: italic;
-  font-family: sans-serif;
-  border-radius: 25px 25px 25px 25px;
+    /* margin-bottom: 15px; */
+    border: none;
+    border-bottom: 1px solid #9e9c9c;
+    width: 100%;
+    padding: 15px;
+    float: right;
+    font-size: 12px;
+    border-color: grey;
+    font-style: italic;
+    font-family: sans-serif;
+    /* border-radius: 25px 25px 25px 25px; */
+}
+
+
+
+.fa-trash-o:before {
+    content: "\f014";
+    margin: 13px;
 }
 
 /* Style the "Add" button */
 .addBtn {
-  margin-top: 0px;
-  padding: 11px;
-  width: 100%;
-  border: none;
-  border-radius: 25px 25px 25px 25px;
-  display: block;
-  background: #6da72ae3;
-  color: #fff;
-  float: right;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 15px;
-  cursor: pointer;
-  transition: 0.3s;
+    margin-top: 0px;
+    padding: 11px;
+    /* width: 100%; */
+    border: none;
+    /* border-radius: 25px 25px 25px 25px; */
+    display: block;
+    background: #000000e3;
+    color: #fff;
+    float: right;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .addBtn:hover {
@@ -139,11 +146,13 @@ input {
 
 
 
-/* footer styling */
-footer {
+.footer {
     text-align: center;
     font-size: 13px;
-    font-family: serif;
+    font-family: sans-serif;
     color: #ffffff;
-    position: sticky;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    left: 0;
 }
